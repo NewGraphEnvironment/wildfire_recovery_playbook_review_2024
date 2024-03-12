@@ -1,22 +1,12 @@
 
 
-# Introduction {#intro}
+# Introduction {-}
 
-`r if(identical(gitbook_on, FALSE))knitr::asis_output("This report is available as pdf and as an online [interactive report](https://newgraphenvironment.github.io/mybookdown-template/) at https://newgraphenvironment.github.io/mybookdown-template/. We recommend viewing online as the web-hosted html version contains more features and is more easily navigable.")` 
+`r if(identical(gitbook_on, FALSE))knitr::asis_output("This report is available as pdf and as an online [interactive report](https://newgraphenvironment.github.io/wildfire_recovery_playbook_review_2024/) at https://newgraphenvironment.github.io/wildfire_recovery_playbook_review_2024/. We recommend viewing online as the web-hosted html version contains more features and is more easily navigable.")` 
 
 
 `r if(identical(gitbook_on, FALSE)){knitr::asis_output("<br>")}`
 
-
-
-<br>
-
-
-## Header with no number {-}
-
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+Thank you for the opportunity to review the Playbook to Guide Landscape Recovery Strategies & Priorities for Salmon
+Habitat Following Major Wildfires [@edienvironmentaldynamicsinc_2023PlaybookGuide]. We are very impressed with the work 
+that has been done!

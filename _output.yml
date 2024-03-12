@@ -1,13 +1,13 @@
 bookdown::gitbook:
-  toc_depth: 1
+  toc_depth: 3
   css: style.css
   config:
     toc:
       before: |
-        <li><a href="./">Template</a></li>
+        <li><a href="./">wildfire_recovery_playbook_review_2024</a></li>
       after: |
-        <li><a href="https://github.com/NewGraphEnvironment/mybookdown-template" target="blank">Scripts and Data</a></li>
-    download: ["Template.pdf", "Template.html"]
+        <li><a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024" target="blank">Scripts and Data</a></li>
+    download: ["wildfire_recovery_playbook_review_2024.pdf", "wildfire_recovery_playbook_review_2024.html"]
     fontsettings:
       theme: night
       family: sans
@@ -15,7 +15,7 @@ pagedown::html_paged:
   front_cover: "fig/new graph text only.png"
   css: ["style-pagedown.css", "default-page-custom.css", "default"] #
   toc: true
-  toc_depth: 1
+  toc_depth: 3
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

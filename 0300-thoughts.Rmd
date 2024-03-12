@@ -1,0 +1,102 @@
+# A Few Thoughts {-}
+
+## Reproducability {-}
+There does not seem to be a lot of information regarding the value of reproducability for restoration planning and from
+our perspective that is a major barrier to progress... For example - the use of scripts to automate workflows and the
+sharing of workflows online.  From our perspective, there is extraordinary value in using scripts and packages to
+automate workflows and promote collaboration. Rather than each professional doing their own analysis on their own custom
+datasets with many points and clicks it should be encouraged that professionals contribute to open-source programming
+that allows centralization of workflows. Examples of the types of packages that can be used to automate workflows are
+presented [here](https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/aquatic_restoration_resources.csv).
+
+
+<br>
+
+## Tools for Reproducability {-}
+
+Although many of the resources in the above linked csv are reports there are also many tools.  An example of a key tool is
+[bcdata](https://github.com/smnorris/bcdata) which is a package that allows the user to access data from the BC Data
+Catalogue.  We use this package to build a mirror of government data that is used in our projects. Because the loading
+of data to a `postgres` database is done automatically and the names of the data `schemas` and `tables` are equivalent
+to those served out by the province our GIS analysis is portable and analysis can be rerun with fresh data over time. We
+can collaborate on a level that is not achievable without much more effort and skill than is required when not using a
+tool such as this that facilitates reproducability. Other key tools include [fwapg](https://github.com/smnorris/fwapg) and [bcfishpass](https://github.com/smnorris/bcfishpass) amoung others. 
+
+<br>
+
+There are many wonderful conceptual workflows presented in this report and some text that indicates that investments
+should be made so these workflows can be automated and shared openly to the greatest extent possible would be a great
+addition to the document.  A great example of a conceptual workflow that could be automated (with the help of packages
+like bcdata!) is Presented in Figure 24 - "Conceptualization of combining spatial data (GIS) on hazards and consequences
+to visualize wildfire risk on a single 2-dimensional wildfire “risk map”. Adapted from Alwathaf and Mansouri (2011)."
+
+<br>
+
+## Open Source - Iterative Reporting {-}
+There is a key question we have been asking ourselves lately and that is 
+
+<br>
+
+    
+  >"What is the most useful way to present information?" 
+  
+<br>
+  
+
+From our perspective - the most useful way to present information is in a version controlled format that allows it to be
+interactive, reproducible, read online, served out as a static document, updated,  copied, used as a template, etc.
+Iterative reporting with a permissive license is a great way to do all those things.  Although there is a steep learning
+curve to produce this type of product and it can be quite time consuming - it then allows leveraging of all the
+components of the work to future projects for everyone. Licenseing is also key and should be considered.  Here is an
+example of a license that promotes collaboration and sharing of work
+[here](https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/LICENSE).
+
+<br>
+
+From our perspective - the playbook is the type of document that is well suited to an iterative reporting format such as
+can be demonstrated within this [code
+repository](https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024) which builds and serves this
+[online report](https://newgraphenvironment.github.io/wildfire_recovery_playbook_review_2024/). We would like to suggest
+that in future iterations, it be considered that the playbook is converted to a dynamic document because:
+
+### Tables and Figures {-}
+There are an incredible number of tables within the document that may have taken a very long time to format.  We suggest
+the tables be converted to simple csvs or pages of an excel workbook and pulled into the project using scripts. This
+would allow others to access the data and use it in their own projects.  The tables could also then be easily updated
+with new data as it becomes available and the formatting would be handled by the scripting. An example of this can be
+seen here in Table \@ref(tab:kable-resources) with the actual file served
+[here](https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/tree/main/data):
+
+```{r kable-resources}
+read_csv("data/aquatic_restoration_resources.csv") %>%
+  fpr::fpr_kable()
+```
+
+<br>
+ 
+Any figures used in the reporting could be saved in the project and used by anyone else
+ in their work to tell there own story and help their teams achieve their goals.  An example of this can be seen here 
+ Table \@ref(tab:kable-resources) with the actual file served [here](https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/fig/collaboration.jpg): 
+
+```{r fig-collaboration}
+knitr::include_graphics("fig/collaboration.jpg")
+```
+
+ - The references in this document are incredible. There are so many and they are extremely valuble. Thank you. To
+ maximize the value of these references, they could be saved in a `.bib` file that can be imported into a reference 
+ manager such as `Zotero` or `Mendeley`.  This would allow the references to be transferred all at once to others libraries
+ so they can be used in other projects and updated as needed.  An example of this can be seen [here](https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/book.bib).
+
+
+ - The document is quite long and from some perspectives may be considered a touch difficult to navigate.  It would be
+ helpful to have the report served online with a table of contents on the left hand side that allows the reader to jump
+ to the section. An example of this can be seen
+ [here](https://newgraphenvironment.github.io/wildfire_recovery_playbook_review_2024/). In this particular situation
+ this is done useing the open source package `bookdown` and the document is served by [github
+ pages](https://pages.github.com/).
+ 
+ - Although it requires a bit of gymnastics to get it set up the
+ document can also be served in a way that allows the reader to download updated pdf versions of the report that are formatted
+ for printing and suitable for upload to a central database such as `Ecocat`. An example of this can be seen [here](https://www.newgraphenvironment.com/fish_passage_skeena_2021_reporting/) where a download button at the top left of the
+ document allows the user to download a pdf version of the report from [this url](
+ https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/master/docs/wildfire_recovery_playbook_review_2024.pdf).

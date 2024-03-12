@@ -5,10 +5,7 @@ pkgs_cran <- c(
   'knitr',
   'bookdown',
   'rmarkdown',
-  'pagedown',
-  'readwritesqlite',
-  'RPostgres',
-  'sf'
+  'pagedown'
 )
 
 pkgs_gh <- c(

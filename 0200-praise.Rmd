@@ -1,0 +1,9 @@
+# Praise{-}
+
+1. The playbook is well organized, well written and easy to follow. It must have taken forever to write and all the
+contributors should be showered in praise for their efforts and should be super proud of the final product.
+2. The playbook is comprehensive and covers most the necessary topics. The content is well researched and we are confident
+the information we are familiar with is accurate. 
+3. The playbook is a valuable resource for anyone involved in wildfire recovery with the links to external resources are 
+particularly helpful.
+

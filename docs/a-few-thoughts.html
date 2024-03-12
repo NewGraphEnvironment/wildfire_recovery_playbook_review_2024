@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>A Few Thoughts | Wildfire Recovery Playbook Review - 2024</title>
+  <meta name="description" content="Wildfire Recovery Playbook Review." />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="A Few Thoughts | Wildfire Recovery Playbook Review - 2024" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Wildfire Recovery Playbook Review." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Few Thoughts | Wildfire Recovery Playbook Review - 2024" />
+  
+  <meta name="twitter:description" content="Wildfire Recovery Playbook Review." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="praise.html"/>
+<link rel="next" href="conclusion.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<script type="text/javascript">
+
+// toggle visibility of R source blocks in R Markdown output
+function toggle_R() {
+  var x = document.getElementsByClassName('r');
+  if (x.length == 0) return;
+  function toggle_vis(o) {
+    var d = o.style.display;
+    o.style.display = (d == 'block' || d == '') ? 'none':'block';
+  }
+
+  for (i = 0; i < x.length; i++) {
+    var y = x[i];
+    if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+  }
+
+    var elem = document.getElementById("myButton1");
+    if (elem.value === "Show/Hide Code") elem.value = "Show/Hide Code";
+    else elem.value = "Show/Hide Code";
+}
+
+document.write('<input onclick="toggle_R();" type="button" value="Show/Hide Code" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+
+document.addEventListener('DOMContentLoaded', toggle_R);
+
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">wildfire_recovery_playbook_review_2024</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Acknowledgement</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="praise.html"><a href="praise.html"><i class="fa fa-check"></i>Praise</a></li>
+<li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html"><i class="fa fa-check"></i>A Few Thoughts</a>
+<ul>
+<li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html#reproducability"><i class="fa fa-check"></i>Reproducability</a></li>
+<li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html#tools-for-reproducability"><i class="fa fa-check"></i>Tools for Reproducability</a></li>
+<li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html#open-source---iterative-reporting"><i class="fa fa-check"></i>Open Source - Iterative Reporting</a>
+<ul>
+<li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html#tables-and-figures"><i class="fa fa-check"></i>Tables and Figures</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i>Conclusion</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i>Session Info</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024" target="blank">Scripts and Data</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Wildfire Recovery Playbook Review - 2024</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="a-few-thoughts" class="section level1 unnumbered hasAnchor">
+<h1>A Few Thoughts<a href="a-few-thoughts.html#a-few-thoughts" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="reproducability" class="section level2 unnumbered hasAnchor">
+<h2>Reproducability<a href="a-few-thoughts.html#reproducability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There does not seem to be a lot of information regarding the value of reproducability for restoration planning and from
+our perspective that is a major barrier to progress… For example - the use of scripts to automate workflows and the
+sharing of workflows online. From our perspective, there is extraordinary value in using scripts and packages to
+automate workflows and promote collaboration. Rather than each professional doing their own analysis on their own custom
+datasets with many points and clicks it should be encouraged that professionals contribute to open-source programming
+that allows centralization of workflows. Examples of the types of packages that can be used to automate workflows are
+presented <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/aquatic_restoration_resources.csv">here</a>.</p>
+<p><br></p>
+</div>
+<div id="tools-for-reproducability" class="section level2 unnumbered hasAnchor">
+<h2>Tools for Reproducability<a href="a-few-thoughts.html#tools-for-reproducability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Although many of the resources in the above linked csv are reports there are also many tools. An example of a key tool is
+<a href="https://github.com/smnorris/bcdata">bcdata</a> which is a package that allows the user to access data from the BC Data
+Catalogue. We use this package to build a mirror of government data that is used in our projects. Because the loading
+of data to a <code>postgres</code> database is done automatically and the names of the data <code>schemas</code> and <code>tables</code> are equivalent
+to those served out by the province our GIS analysis is portable and analysis can be rerun with fresh data over time. We
+can collaborate on a level that is not achievable without much more effort and skill than is required when not using a
+tool such as this that facilitates reproducability. Other key tools include <a href="https://github.com/smnorris/fwapg">fwapg</a> and <a href="https://github.com/smnorris/bcfishpass">bcfishpass</a> amoung others.</p>
+<p><br></p>
+<p>There are many wonderful conceptual workflows presented in this report and some text that indicates that investments
+should be made so these workflows can be automated and shared openly to the greatest extent possible would be a great
+addition to the document. A great example of a conceptual workflow that could be automated (with the help of packages
+like bcdata!) is Presented in Figure 24 - “Conceptualization of combining spatial data (GIS) on hazards and consequences
+to visualize wildfire risk on a single 2-dimensional wildfire “risk map”. Adapted from Alwathaf and Mansouri (2011).”</p>
+<p><br></p>
+</div>
+<div id="open-source---iterative-reporting" class="section level2 unnumbered hasAnchor">
+<h2>Open Source - Iterative Reporting<a href="a-few-thoughts.html#open-source---iterative-reporting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There is a key question we have been asking ourselves lately and that is</p>
+<p><br></p>
+<blockquote>
+<p>“What is the most useful way to present information?”</p>
+</blockquote>
+<p><br></p>
+<p>From our perspective - the most useful way to present information is in a version controlled format that allows it to be
+interactive, reproducible, read online, served out as a static document, updated, copied, used as a template, etc.
+Iterative reporting with a permissive license is a great way to do all those things. Although there is a steep learning
+curve to produce this type of product and it can be quite time consuming - it then allows leveraging of all the
+components of the work to future projects for everyone. Licenseing is also key and should be considered. Here is an
+example of a license that promotes collaboration and sharing of work
+<a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/LICENSE">here</a>.</p>
+<p><br></p>
+<p>From our perspective - the playbook is the type of document that is well suited to an iterative reporting format such as
+can be demonstrated within this <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024">code
+repository</a> which builds and serves this
+<a href="https://newgraphenvironment.github.io/wildfire_recovery_playbook_review_2024/">online report</a>. We would like to suggest
+that in future iterations, it be considered that the playbook is converted to a dynamic document because:</p>
+<div id="tables-and-figures" class="section level3 unnumbered hasAnchor">
+<h3>Tables and Figures<a href="a-few-thoughts.html#tables-and-figures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are an incredible number of tables within the document that may have taken a very long time to format. We suggest
+the tables be converted to simple csvs or pages of an excel workbook and pulled into the project using scripts. This
+would allow others to access the data and use it in their own projects. The tables could also then be easily updated
+with new data as it becomes available and the formatting would be handled by the scripting. An example of this can be
+seen here in Table <a href="a-few-thoughts.html#tab:kable-resources">1</a> with the actual file served
+<a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/tree/main/data">here</a>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="a-few-thoughts.html#cb5-1" tabindex="-1"></a><span class="fu">read_csv</span>(<span class="st">&quot;data/aquatic_restoration_resources.csv&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="a-few-thoughts.html#cb5-2" tabindex="-1"></a>  fpr<span class="sc">::</span><span class="fu">fpr_kable</span>()</span></code></pre></div>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; ">
+<table class="table table-condensed table-responsive" style="font-size: 11px; color: black; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:kable-resources">Table 1: </span><span id="tab:kable-resources">Table 2: </span>
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Resource
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+URL
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Details
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+bcfishpass
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/smnorris/bcfishpass" class="uri">https://github.com/smnorris/bcfishpass</a>
+</td>
+<td style="text-align:left;">
+Build and maintain an aquatic connectivity / fish passage database for British Columbia to track known barriers to fish passage, model potential barriers to fish passage, model passability/accessibility of streams based on species swimming ability, model streams with potential for spawning and rearing activity, etc
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fpr
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/NewGraphEnvironment/fpr" class="uri">https://github.com/NewGraphEnvironment/fpr</a>
+</td>
+<td style="text-align:left;">
+Fish Passage Reporting functions for British Columbia. R package used for cleaning, transforming and extracting data to build interactive reports related to fish passage planning including fish passage assessments and habitat confirmation assessments at road-stream crossings. In
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+dff-2022
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/NewGraphEnvironment/dff-2022" class="uri">https://github.com/NewGraphEnvironment/dff-2022</a>
+</td>
+<td style="text-align:left;">
+Building digital field forms for field work in British Columbia, mobile QGIS projects and processing data collected using standardized provincial data layer and data collection templates. Utilizes open source software including R, python, bash and QGIS and others.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rfp
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/NewGraphEnvironment/rfp" class="uri">https://github.com/NewGraphEnvironment/rfp</a>
+</td>
+<td style="text-align:left;">
+Reproducible Field Projects for British Columbia. R package to standardize and track the creation of collaborative GIS projects for aquatic restoration/conservation planning and field work. Under development incorporating many dff-2022 scripts into R package functions.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Restoration Framework
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/NewGraphEnvironment/restoration_framework" class="uri">https://github.com/NewGraphEnvironment/restoration_framework</a>
+</td>
+<td style="text-align:left;">
+Public repository for development of and linking to restoration / conservation planning tools and concepts.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Restoring Fish Passage in the Peace Region 2023
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_peace_2023_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_peace_2023_reporting/</a>
+</td>
+<td style="text-align:left;">
+REPORT NOT YET LIVE (20240220).
+Interactive reporting for 2023 fish passage restoration planning activities in the Parsnip, Carp and Crooked Watershed Groups north of Prince George in the Peace Region. Designs completed for two crossings in the Table River watershed (Parsnip River watershed group) and materials purchased for remediation. Phase 1 and Phase 2 assessments in Carp and Crooked watershed groups. Fish sampling with PIT tagging conducted in Parsnip River watershed group. Aerial imagery collected by drone. Repository located at <a href="https://github.com/NewGraphEnvironment/fish_passage_peace_2023_reporting" class="uri">https://github.com/NewGraphEnvironment/fish_passage_peace_2023_reporting</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Restoring Fish Passage in the Peace Region 2022
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_peace_2022_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_peace_2022_reporting/</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for 2022 fish passage restoration planning activities in the Parsnip, Carp and Crooked Watershed Groups north of Prince George in the Peace Region. Includes interactive planning dashboard. Crossing in Missinka watershed replaced and design done for site on Chuchinka-Arctic FSR. Fish sampling with PIT tagging conducted. Aerial imagery collected by drone.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Restoring Fish Passage in the Peace Region 2021
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_parsnip_2021_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_parsnip_2021_reporting/</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for 2021 fish passage restoration planning activities in the Parsnip Watershed Group north of Prince George in the Peace Region. Includes interactive planning dashboard and .
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Parsnip_Fish_Passage
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/Parsnip_Fish_Passage/" class="uri">https://newgraphenvironment.github.io/Parsnip_Fish_Passage/</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for 2019 fish confirmation assessments in the Parsnip Watershed Group north of Prince George in the Peace Region. Fish sampling conducted. Aerial imagery collected by drone.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Skeena Fish Passage Restoration Planning 2023
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_skeena_2023_reporting" class="uri">https://newgraphenvironment.github.io/fish_passage_skeena_2023_reporting</a>
+</td>
+<td style="text-align:left;">
+REPORT NOT YET LIVE (20240220).
+Interactive reporting for Fish passage and habitat confirmation assessments in the Bulkey River, Morice River, Zymoetz River and Kispiox River watershed groups. Fish sampling conducted. Repository located at <a href="https://github.com/NewGraphEnvironment/fish_passage_skeena_2023_reporting" class="uri">https://github.com/NewGraphEnvironment/fish_passage_skeena_2023_reporting</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Skeena Fish Passage Restoration Planning 2022
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_skeena_2022_reporting" class="uri">https://newgraphenvironment.github.io/fish_passage_skeena_2022_reporting</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for Fish passage and habitat confirmation assessments in the Morice River, Zymoetz River and Kispiox River watershed groups. Fish sampling conducted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bulkley River Watershed Group Fish Passage Restoration Planning 2022
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_bulkley_2022_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_bulkley_2022_reporting/</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for fish passage assessments and habitat confirmation assessments at sites in the Bulkley River watershed group. Fish sampling with PIT tagging conducted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bulkley River and Morice River Watershed Groups Fish Passage Restoration Planning 2021
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_skeena_2021_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_skeena_2021_reporting/</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for Fish passage assessments and habitat confirmation assessments in the Bulkley River and Morice River watershed groups. Fish sampling conducted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bulkley River and Morice River Watershed Groups Fish Passage Restoration Planning 2020
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_bulkley_2020_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_bulkley_2020_reporting/</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for fish passage assessments and habitat confirmation assessments in the Bulkley River and Morice River watershed groups. Fish sampling conducted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Elk River Watershed Group Fish Passage Restoration Planning 2022
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_elk_2022_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_elk_2022_reporting/</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for fish passage assessments and habitat confirmation assessments in the Elk River watershed group. Fish sampling, fish habitat assessment procedures, temperature monitoring and stream discharge measurements were conducted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Elk River Watershed Group Fish Passage Restoration Planning 2021
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_elk_2021_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_elk_2021_reporting/</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for fish passage assessments and habitat confirmation assessments in the Elk River watershed group. Fish sampling, fish habitat assessment procedures and temperature monitoring were conducted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Elk River Watershed Group Fish Passage Restoration Planning 2020
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_elk_2020_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_elk_2020_reporting/</a>
+</td>
+<td style="text-align:left;">
+Interactive reporting for fish passage assessments and habitat confirmation assessments in the Elk River watershed group. Fish sampling conducted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fraser Fish Passage Restoration Planning 2023
+</td>
+<td style="text-align:left;">
+<a href="https://newgraphenvironment.github.io/fish_passage_fraser_2023_reporting/" class="uri">https://newgraphenvironment.github.io/fish_passage_fraser_2023_reporting/</a>
+</td>
+<td style="text-align:left;">
+REPORT NOT YET LIVE (20240220).
+Interactive reporting for fish passage assessments in the Nechacko River, Lower Chilako River, Francois Lake, Upper Fraser River and Mork River watershed groups. Repository at <a href="https://github.com/NewGraphEnvironment/fish_passage_fraser_2023_reporting" class="uri">https://github.com/NewGraphEnvironment/fish_passage_fraser_2023_reporting</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Richfield Creek Riparian Restoration 2022
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/NewGraphEnvironment/fish_passage_bulkley_2022_reporting/raw/main/docs/SERN_Richfield_Fencing_2022_Final%20Report.pdf" class="uri">https://github.com/NewGraphEnvironment/fish_passage_bulkley_2022_reporting/raw/main/docs/SERN_Richfield_Fencing_2022_Final%20Report.pdf</a>
+</td>
+<td style="text-align:left;">
+Leveraging other investments in the watershed by Morice Watershed Monitoring Trust (streambank stabilization and riparian planting at four locations) and A Rocha Canada, we supported installation of 840m of cattle exclusion fence on previously unfenced areas of rangeland adjacent to high fisheries values in Richfield Creek. Installation of live cuttings in four distinct polygons covering 866m2 of riparian area. Use of drone to gather Lidar and temperature data to help inform future process-based restoration actions in the Upper Bulkley Watershed.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Richfield Creek Riparian Fencing 2021
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/NewGraphEnvironment/fish_passage_skeena_2021_reporting/raw/master/docs/Attachment_4.pdf" class="uri">https://github.com/NewGraphEnvironment/fish_passage_skeena_2021_reporting/raw/master/docs/Attachment_4.pdf</a>
+</td>
+<td style="text-align:left;">
+Leveraging other investments in the watershed by Morice Watershed Monitoring Trust (streambank stabilization and riparian planting at four locations) we supported the installation of 1100 m of fencing on the west of Richfield Creek in in the Upper Bulkley Watershed.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fish-passage-22
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/poissonconsulting/fish-passage-22" class="uri">https://github.com/poissonconsulting/fish-passage-22</a>
+</td>
+<td style="text-align:left;">
+Mapping stream discharge and temperature causal effects pathways to focus aquatic restoration actions in areas of highest potential for positive impacts on fisheries values. Includes scripts to download real-time hydrometric flow and temperature data as well as Pacific Climate Impact Consortium hydrometric data (modelled historic and projected)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fissr-explore
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/NewGraphEnvironment/fissr_explore" class="uri">https://github.com/NewGraphEnvironment/fissr_explore</a>
+</td>
+<td style="text-align:left;">
+Exploratory analysis of provincial fish sampling dataset to explore utility for building evidence based approach to the parameters used to model the best habitat for individual fish species to help make decisions around where to invest in aquatic restoration activities
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fissr-explore-21
+</td>
+<td style="text-align:left;">
+<a href="https://www.poissonconsulting.ca/f/1386346791" class="uri">https://www.poissonconsulting.ca/f/1386346791</a>
+</td>
+<td style="text-align:left;">
+Analysis of relationships between rainbow trout density (from province wide electrofishing dataset) , channel width and gradient
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+channel-width-21b
+</td>
+<td style="text-align:left;">
+<a href="https://www.poissonconsulting.ca/f/859859031" class="uri">https://www.poissonconsulting.ca/f/859859031</a>
+</td>
+<td style="text-align:left;">
+Modelled estimate of channel width based on watershed area and mean annual precipitation. Used to help estimate rearing and spawning suitability of streams for fish use by numerous species in .
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+bcdata
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/smnorris/bcdata" class="uri">https://github.com/smnorris/bcdata</a>
+</td>
+<td style="text-align:left;">
+Simplifies downloads of BC geographic data () and DEMs. Integrates with postgres databases using schema and table names identical to those of the province. Allows real-time updates of datasets and collaborative sharing of scripts/workflows.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fwapg
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/smnorris/fwapg" class="uri">https://github.com/smnorris/fwapg</a>
+</td>
+<td style="text-align:left;">
+Extends British Columbia’s Freshwater Atlas (FWA) with PostgreSQL/PostGIS to enable speedy upstream/downstream queries throughout BC, quickly and cleanly generate watershed boundaries upstream of arbitrary locations, enable quickly serving FWA features as vector tiles, etc.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+bcfishobs
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/smnorris/bcfishobs" class="uri">https://github.com/smnorris/bcfishobs</a>
+</td>
+<td style="text-align:left;">
+Locate up to date fish observation points as linear referencing events on the Freshwater Atlas.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+bcbrat
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/smnorris/bcbrat" class="uri">https://github.com/smnorris/bcbrat</a>
+</td>
+<td style="text-align:left;">
+Experimental tool for generating BRAT project data for British Columbia watersheds.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+roadintegrator
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/smnorris/roadintegrator" class="uri">https://github.com/smnorris/roadintegrator</a>
+</td>
+<td style="text-align:left;">
+Merge multiple BC road datasets into a single layer for Cumulative Effects analysis
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+designatedlands
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/smnorris/designatedlands" class="uri">https://github.com/smnorris/designatedlands</a>
+</td>
+<td style="text-align:left;">
+Combine spatial data for 40+ designations that contribute to land management to create a single ‘Designated Lands’ layer for British Columbia
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fish Passage Maps
+</td>
+<td style="text-align:left;">
+<a href="https://hillcrestgeo.ca/outgoing/fishpassage/projects/" class="uri">https://hillcrestgeo.ca/outgoing/fishpassage/projects/</a>
+</td>
+<td style="text-align:left;">
+Georeferenced maps for all Skeena watershed groups, Elk River as well as the Parsnip River, Crooked, and Carp River watershed groups in the Peace Region. Can be imported to phone or table for navigation real-time in Avenza Maps.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mergin Maps
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/MerginMaps" class="uri">https://github.com/MerginMaps</a>
+</td>
+<td style="text-align:left;">
+Geodata platform for hosting shared QGIS projects on the cloud and collecting field data through forms on phones and tablets. Open source software with paid plans to simplify setup and maintenance. Command line tools to interact with projects including for syncing and permissions.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p>Any figures used in the reporting could be saved in the project and used by anyone else
+in their work to tell there own story and help their teams achieve their goals. An example of this can be seen here
+Table <a href="a-few-thoughts.html#tab:kable-resources">1</a> with the actual file served <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/fig/collaboration.jpg">here</a>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="a-few-thoughts.html#cb6-1" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/collaboration.jpg&quot;</span>)</span></code></pre></div>
+<p><img src="fig/collaboration.jpg" width="100%" /></p>
+<ul>
+<li><p>The references in this document are incredible. There are so many and they are extremely valuble. Thank you. To
+maximize the value of these references, they could be saved in a <code>.bib</code> file that can be imported into a reference
+manager such as <code>Zotero</code> or <code>Mendeley</code>. This would allow the references to be transferred all at once to others libraries
+so they can be used in other projects and updated as needed. An example of this can be seen <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/book.bib">here</a>.</p></li>
+<li><p>The document is quite long and from some perspectives may be considered a touch difficult to navigate. It would be
+helpful to have the report served online with a table of contents on the left hand side that allows the reader to jump
+to the section. An example of this can be seen
+<a href="https://newgraphenvironment.github.io/wildfire_recovery_playbook_review_2024/">here</a>. In this particular situation
+this is done useing the open source package <code>bookdown</code> and the document is served by <a href="https://pages.github.com/">github
+pages</a>.</p></li>
+<li><p>Although it requires a bit of gymnastics to get it set up the
+document can also be served in a way that allows the reader to download updated pdf versions of the report that are formatted
+for printing and suitable for upload to a central database such as <code>Ecocat</code>. An example of this can be seen <a href="https://www.newgraphenvironment.com/fish_passage_skeena_2021_reporting/">here</a> where a download button at the top left of the
+document allows the user to download a pdf version of the report from <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/master/docs/wildfire_recovery_playbook_review_2024.pdf">this url</a>.</p></li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="praise.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "night",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["wildfire_recovery_playbook_review_2024.pdf", "wildfire_recovery_playbook_review_2024.html"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
