@@ -52,6 +52,8 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 <script type="text/javascript">
 
@@ -195,7 +197,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html"><i class="fa fa-check"></i>A Few Thoughts</a>
 <ul>
 <li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html#reproducability"><i class="fa fa-check"></i>Reproducability</a></li>
-<li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html#tools-for-reproducability"><i class="fa fa-check"></i>Tools for Reproducability</a></li>
+<li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html#software-tools-for-reproducability"><i class="fa fa-check"></i>Software Tools for Reproducability</a></li>
 <li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html#open-source---iterative-reporting"><i class="fa fa-check"></i>Open Source - Iterative Reporting</a>
 <ul>
 <li class="chapter" data-level="" data-path="a-few-thoughts.html"><a href="a-few-thoughts.html#tables-and-figures"><i class="fa fa-check"></i>Tables and Figures</a></li>
@@ -229,29 +231,34 @@ div.csl-indent {
 <div id="reproducability" class="section level2 unnumbered hasAnchor">
 <h2>Reproducability<a href="a-few-thoughts.html#reproducability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>There does not seem to be a lot of information regarding the value of reproducability for restoration planning and from
-our perspective that is a major barrier to progress… For example - the use of scripts to automate workflows and the
-sharing of workflows online. From our perspective, there is extraordinary value in using scripts and packages to
+our perspective that is a major opportunity for progress… For example - the use of scripts to automate workflows and
+the sharing of workflows online. From our perspective, there is extraordinary value in using scripts and packages to
 automate workflows and promote collaboration. Rather than each professional doing their own analysis on their own custom
-datasets with many points and clicks it should be encouraged that professionals contribute to open-source programming
-that allows centralization of workflows. Examples of the types of packages that can be used to automate workflows are
-presented <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/aquatic_restoration_resources.csv">here</a>.</p>
+datasets with many ad-hoc workflows it should be encouraged that professionals move towards well documented -
+reproducible open-source programming workflows using scripting languages like <code>R</code>, <code>sql</code> and <code>python</code>. Examples of the
+types of packages that can be used to automate workflows are presented
+<a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/data/aquatic_restoration_resources.csv">here</a>.</p>
 <p><br></p>
 </div>
-<div id="tools-for-reproducability" class="section level2 unnumbered hasAnchor">
-<h2>Tools for Reproducability<a href="a-few-thoughts.html#tools-for-reproducability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Although many of the resources in the above linked csv are reports there are also many tools. An example of a key tool is
-<a href="https://github.com/smnorris/bcdata">bcdata</a> which is a package that allows the user to access data from the BC Data
-Catalogue. We use this package to build a mirror of government data that is used in our projects. Because the loading
-of data to a <code>postgres</code> database is done automatically and the names of the data <code>schemas</code> and <code>tables</code> are equivalent
-to those served out by the province our GIS analysis is portable and analysis can be rerun with fresh data over time. We
-can collaborate on a level that is not achievable without much more effort and skill than is required when not using a
-tool such as this that facilitates reproducability. Other key tools include <a href="https://github.com/smnorris/fwapg">fwapg</a> and <a href="https://github.com/smnorris/bcfishpass">bcfishpass</a> amoung others.</p>
+<div id="software-tools-for-reproducability" class="section level2 unnumbered hasAnchor">
+<h2>Software Tools for Reproducability<a href="a-few-thoughts.html#software-tools-for-reproducability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Although many of the resources in the above linked csv are reports (containing scripted workflows) there are also many
+stand-alone software tools. An example of a tool key for reproducible workflows is
+<a href="https://github.com/smnorris/bcdata">bcdata</a> [norris2024smnorrisbcdata] which is a package that allows the user to
+access data from the <a href="https://catalogue.data.gov.bc.ca/">BC Data Catalogue</a>. This package can be used to build a mirror
+of government data that is used in projects. Because the loading of data to a <code>postgres</code> database is done automatically
+and the names of the data <code>schemas</code> and <code>tables</code> are equivalent to those served out by the province - GIS analysis is
+portable and analysis can be rerun with fresh data over time. This facilitates collaboration and reproducability on a
+level that is not achievable without much more effort and skill than is required when not using a tool such as this.
+Other key tools include <a href="https://github.com/smnorris/fwapg">fwapg</a> [norris2024smnorrisfwapg] and
+<a href="https://github.com/smnorris/bcfishpass">bcfishpass</a> [norris2024smnorrisbcfishpass] among others.</p>
 <p><br></p>
-<p>There are many wonderful conceptual workflows presented in this report and some text that indicates that investments
-should be made so these workflows can be automated and shared openly to the greatest extent possible would be a great
-addition to the document. A great example of a conceptual workflow that could be automated (with the help of packages
-like bcdata!) is Presented in Figure 24 - “Conceptualization of combining spatial data (GIS) on hazards and consequences
-to visualize wildfire risk on a single 2-dimensional wildfire “risk map”. Adapted from Alwathaf and Mansouri (2011).”</p>
+<p>There are many wonderful conceptual workflows presented in the Wildfire Restoration Playbook and some text that
+indicates that investments should be made so these workflows can be automated and shared openly to the greatest extent
+possible would be a great addition to the document. A great example of a conceptual workflow that could be automated
+(with the help of packages like bcdata!) is Presented in Figure 24 - “Conceptualization of combining spatial data (GIS)
+on hazards and consequences to visualize wildfire risk on a single 2-dimensional wildfire “risk map”. Adapted from
+Alwathaf and Mansouri (2011).”</p>
 <p><br></p>
 </div>
 <div id="open-source---iterative-reporting" class="section level2 unnumbered hasAnchor">
@@ -264,11 +271,13 @@ to visualize wildfire risk on a single 2-dimensional wildfire “risk map”. Ad
 <p><br></p>
 <p>From our perspective - the most useful way to present information is in a version controlled format that allows it to be
 interactive, reproducible, read online, served out as a static document, updated, copied, used as a template, etc.
-Iterative reporting with a permissive license is a great way to do all those things. Although there is a steep learning
-curve to produce this type of product and it can be quite time consuming - it then allows leveraging of all the
-components of the work to future projects for everyone. Licenseing is also key and should be considered. Here is an
-example of a license that promotes collaboration and sharing of work
-<a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/LICENSE">here</a>.</p>
+Iterative reporting, managed with a version control system such as
+<a href="https://docs.github.com/en/get-started/using-git/about-git">git</a> with a permissive license is a great way to do all
+those things. Although there is a steep learning curve to using programming tools and producing this type of product
+and although it can be quite time consuming - it then allows leveraging of all the components of the work to future
+projects for everyone. Licenseing is also key and should be considered.
+<a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/LICENSE">Here</a> is an example of
+a license that promotes collaboration and sharing/leveraging of work.</p>
 <p><br></p>
 <p>From our perspective - the playbook is the type of document that is well suited to an iterative reporting format such as
 can be demonstrated within this <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024">code
@@ -663,27 +672,39 @@ Geodata platform for hosting shared QGIS projects on the cloud and collecting fi
 </table>
 </div>
 <p><br></p>
-<p>Any figures used in the reporting could be saved in the project and used by anyone else
-in their work to tell there own story and help their teams achieve their goals. An example of this can be seen here
-Table <a href="a-few-thoughts.html#tab:kable-resources">1</a> with the actual file served <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/fig/collaboration.jpg">here</a>:</p>
+<p>Any figures used in the reporting could be saved in the project and used by anyone else in their work to tell there own
+story and help their teams achieve their goals. An example of this can be seen here Table <a href="a-few-thoughts.html#tab:kable-resources">1</a>
+with the actual file served
+<a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/fig/collaboration.jpg">here</a>.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="a-few-thoughts.html#cb6-1" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/collaboration.jpg&quot;</span>)</span></code></pre></div>
 <p><img src="fig/collaboration.jpg" width="100%" /></p>
 <ul>
-<li><p>The references in this document are incredible. There are so many and they are extremely valuble. Thank you. To
-maximize the value of these references, they could be saved in a <code>.bib</code> file that can be imported into a reference
-manager such as <code>Zotero</code> or <code>Mendeley</code>. This would allow the references to be transferred all at once to others libraries
-so they can be used in other projects and updated as needed. An example of this can be seen <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/book.bib">here</a>.</p></li>
-<li><p>The document is quite long and from some perspectives may be considered a touch difficult to navigate. It would be
-helpful to have the report served online with a table of contents on the left hand side that allows the reader to jump
-to the section. An example of this can be seen
+<li><p>The references in the Wildfire Restoration Playbook are incredible. There are so many and they are extremely valuble.
+Thank you. To maximize the value of these references, they should be tabulated within a references section at the end
+of the report and documented in a <code>.bib</code> file that can be imported and exported to and from a reference manager such as
+<code>Zotero</code> or <code>Mendeley</code>. This would allow the references to be transferred all at once to others libraries so they can
+be used in other projects and updated as needed. An example of this can be seen
+<a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/main/book.bib">here</a>.</p></li>
+<li><p>The document is necessarily fairly lengthy longish and from some perspectives may be considered a touch difficult to
+navigate. It would be helpful to have the report served online with a table of contents on the left hand side that
+allows the reader to jump to each section. An example of this can be seen
 <a href="https://newgraphenvironment.github.io/wildfire_recovery_playbook_review_2024/">here</a>. In this particular situation
 this is done useing the open source package <code>bookdown</code> and the document is served by <a href="https://pages.github.com/">github
 pages</a>.</p></li>
 <li><p>Although it requires a bit of gymnastics to get it set up the
-document can also be served in a way that allows the reader to download updated pdf versions of the report that are formatted
-for printing and suitable for upload to a central database such as <code>Ecocat</code>. An example of this can be seen <a href="https://www.newgraphenvironment.com/fish_passage_skeena_2021_reporting/">here</a> where a download button at the top left of the
-document allows the user to download a pdf version of the report from <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/master/docs/wildfire_recovery_playbook_review_2024.pdf">this url</a>.</p></li>
+document can also be served in a way that allows the reader to download updated pdf versions of the report that are
+formatted for printing and suitable for upload to a central database such as <code>Ecocat</code>. An example of this can be seen
+<a href="https://www.newgraphenvironment.com/fish_passage_skeena_2021_reporting/">here</a> where a download button at the top left
+of the document allows the user to download a pdf version of the report from <a href="https://github.com/NewGraphEnvironment/wildfire_recovery_playbook_review_2024/blob/master/docs/wildfire_recovery_playbook_review_2024.pdf">this url</a>.</p></li>
 </ul>
+<p>### Collaborative GIS {-}
+Geographical Information Systems are essential for understanding restoration plans and the reasons they are required.
+Without the ability to visualize the landscape and the data that is used to make decisions it is difficult to
+communicate the need for restoration and the potential benefits. We suggest that the collaborative GIS environments be
+mentioned as a key tool for restoration planning. Although there are many tools for sharing spatial information we
+have been finding that <a href="https://merginmaps.com/">Mergin Maps</a> (source code <a href="https://github.com/MerginMaps">here</a> -
+which leverages the open source QGIS software - is a great tool for sharing spatial data, collaborating on spatial
+analysis and even collecting standardized data on our phones. Maybe worth a mention.</p>
 
 </div>
 </div>
