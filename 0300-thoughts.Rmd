@@ -17,14 +17,14 @@ types of packages that can be used to automate workflows are presented
 
 Although many of the resources in the above linked csv are reports (containing scripted workflows) there are also many
 stand-alone software tools.  An example of a tool key for reproducible workflows is
-[bcdata](https://github.com/smnorris/bcdata) [norris2024smnorrisbcdata] which is a package that allows the user to
+[bcdata](https://github.com/smnorris/bcdata) [@norris2024smnorrisbcdata] which is a package that allows the user to
 access data from the [BC Data Catalogue](https://catalogue.data.gov.bc.ca/).  This package can be used to build a mirror
 of government data that is used in projects. Because the loading of data to a `postgres` database is done automatically
 and the names of the data `schemas` and `tables` are equivalent to those served out by the province - GIS analysis is
 portable and analysis can be rerun with fresh data over time. This facilitates collaboration and reproducability on a
 level that is not achievable without much more effort and skill than is required when not using a tool such as this.
-Other key tools include [fwapg](https://github.com/smnorris/fwapg) [norris2024smnorrisfwapg] and
-[bcfishpass](https://github.com/smnorris/bcfishpass) [norris2024smnorrisbcfishpass] among others.
+Other key tools include [fwapg](https://github.com/smnorris/fwapg) [@norris2024smnorrisfwapg] and
+[bcfishpass](https://github.com/smnorris/bcfishpass) [@norris2024smnorrisbcfishpass] among others.
 
 <br>
 
